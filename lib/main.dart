@@ -41,6 +41,7 @@ class MyHomePage extends StatelessWidget {
                     //we have total 250 milliseconds. during 200 milliseconds animation goes to 0 to 1.2 then next 50 milliseconds, animation goes to 1.2 to 1.0,
                     //in reverse, during 50 milliseconds animation goes 1.0 to 1.2 then next 200, 1.2 to 0.0.
                     //that's why we see a bounce.
+                    //instead of tweenMap we can use nested Animator. if we want to specify different duration.
                     "first": TweenSequence([
                       TweenSequenceItem(
                           tween: Tween<double>(begin: 0.0, end: 1.2),
